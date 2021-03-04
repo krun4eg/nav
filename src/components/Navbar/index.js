@@ -1,12 +1,17 @@
-import React from 'react'
-import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavbarElements'
+import React from 'react';
+import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavbarElements';
+import logo from '../../images/logo.jpg'
+import styled from 'styled-components';
 
-const Navbar = () => {
-    return (
-        <>
+const LogoImg = styled.img`
+    width: 100px;
+    height: 100px;
+`
+
+const Navbar = () => (  
             <Nav>
                 <NavLink to="/">
-                    <img src={require('../../images/logo.svg')} alt='logo' />
+                    <LogoImg src={logo} alt='logo' />
                 </NavLink>
                 <Bars />
                 <NavMenu>
@@ -27,8 +32,6 @@ const Navbar = () => {
                     <NavBtnLink to="sigin">Sign In</NavBtnLink>
                 </NavBtn>
             </Nav>
-        </>
-    )
-}
+);
 
-export default Navbar
+export default Navbar;
