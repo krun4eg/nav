@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Home from './pages';
 import Demos from './pages/demos';
 import Header from './components/Header'
-import Content from './components/Content'
+import Content  from './components/Content'
 
 
 function App() {
