@@ -134,7 +134,6 @@ const Info = () => (
         React for disabled
       </CourseName>
     </>
-    
 );
 
 const Course = () => ( 
@@ -153,7 +152,6 @@ const Content = () => (
         <Course />
         <Course />
     </CourseContainer>
-    
 );
 
 
